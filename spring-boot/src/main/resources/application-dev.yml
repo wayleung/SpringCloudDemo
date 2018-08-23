@@ -1,0 +1,23 @@
+server:
+  port: 8088
+  servlet:
+    context-path: /springboot
+
+
+girl:
+  name: B
+  age: 18
+  content: content:${name},age:${age}
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/db??useUnicode=true&characterEncoding=utf8&characterSetResults=utf8
+    username: root
+    password: root
+  jpa:
+    hibernate:
+#      这些都是数据库常见的一些配置没什么可说的，其中ddl_auto: create 代表在数据库创建表，update 代表更新，首次启动需要create ,如果你想通过hibernate 注解的方式创建数据库的表的话，之后需要改为 update.
+      ddl-auto: update
+    show-sql: true
+

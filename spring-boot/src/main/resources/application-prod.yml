@@ -1,0 +1,10 @@
+server:
+  port: 8089
+  servlet:
+    context-path: /springboot
+
+
+girl:
+  name: B
+  age: 18
+  content: content:${name},age:${age}
