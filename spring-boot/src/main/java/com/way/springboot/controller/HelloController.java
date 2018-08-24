@@ -13,7 +13,7 @@ public class HelloController {
     @Resource
     GirlProperties girlProperties;
 
-    @RequestMapping(value = {"/hello","/hi"},method = RequestMethod.GET)
+    @RequestMapping(value = {"/helloworld","/hiworld"},method = RequestMethod.GET)
     public String say(){
         return "hi you!!"+girlProperties.getName()+girlProperties.getAge();
     }
